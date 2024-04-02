@@ -10,9 +10,19 @@
 		EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */; };
 		EE22BE1E2BBC1E4300577484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */; };
 		EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1F2BBC1E4300577484 /* ViewController.swift */; };
-		EE22BE232BBC1E4400577484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE212BBC1E4400577484 /* Main.storyboard */; };
 		EE22BE252BBC1E4500577484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE242BBC1E4500577484 /* Assets.xcassets */; };
 		EE22BE282BBC1E4500577484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */; };
+		EE22BE382BBC24CC00577484 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE372BBC24CC00577484 /* SnapKit */; };
+		EE22BE3A2BBC24CC00577484 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE392BBC24CC00577484 /* SnapKit-Dynamic */; };
+		EE22BE3D2BBC251D00577484 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE3C2BBC251D00577484 /* RxBlocking */; };
+		EE22BE3F2BBC251D00577484 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE3E2BBC251D00577484 /* RxBlocking-Dynamic */; };
+		EE22BE412BBC251D00577484 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE402BBC251D00577484 /* RxCocoa */; };
+		EE22BE432BBC251D00577484 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE422BBC251D00577484 /* RxCocoa-Dynamic */; };
+		EE22BE452BBC251D00577484 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE442BBC251D00577484 /* RxRelay */; };
+		EE22BE472BBC265A00577484 /* Networks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE462BBC265A00577484 /* Networks.swift */; };
+		EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4A2BBC26E300577484 /* AEDResponse.swift */; };
+		EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4C2BBC275000577484 /* UseCase.swift */; };
+		EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +30,13 @@
 		EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE22BE1F2BBC1E4300577484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE22BE222BBC1E4400577484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE22BE242BBC1E4500577484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE22BE272BBC1E4500577484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE22BE292BBC1E4500577484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE22BE462BBC265A00577484 /* Networks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networks.swift; sourceTree = "<group>"; };
+		EE22BE4A2BBC26E300577484 /* AEDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDResponse.swift; sourceTree = "<group>"; };
+		EE22BE4C2BBC275000577484 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingFigma.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE22BE382BBC24CC00577484 /* SnapKit in Frameworks */,
+				EE22BE3D2BBC251D00577484 /* RxBlocking in Frameworks */,
+				EE22BE452BBC251D00577484 /* RxRelay in Frameworks */,
+				EE22BE412BBC251D00577484 /* RxCocoa in Frameworks */,
+				EE22BE3A2BBC24CC00577484 /* SnapKit-Dynamic in Frameworks */,
+				EE22BE432BBC251D00577484 /* RxCocoa-Dynamic in Frameworks */,
+				EE22BE3F2BBC251D00577484 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +76,90 @@
 		EE22BE1A2BBC1E4300577484 /* AMA */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */,
-				EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */,
-				EE22BE1F2BBC1E4300577484 /* ViewController.swift */,
-				EE22BE212BBC1E4400577484 /* Main.storyboard */,
-				EE22BE242BBC1E4500577484 /* Assets.xcassets */,
-				EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */,
-				EE22BE292BBC1E4500577484 /* Info.plist */,
+				EE22BE312BBC1EEB00577484 /* Domain */,
+				EE22BE302BBC1EE300577484 /* Data */,
+				EE22BE322BBC1EF900577484 /* Presentation */,
+				EE22BE342BBC1F1F00577484 /* Utils */,
+				EE22BE2F2BBC1ED300577484 /* Application */,
+				EE22BE332BBC1F1000577484 /* Resources */,
 			);
 			path = AMA;
+			sourceTree = "<group>";
+		};
+		EE22BE2F2BBC1ED300577484 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE352BBC1F7D00577484 /* Config */,
+				EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */,
+				EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EE22BE302BBC1EE300577484 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE462BBC265A00577484 /* Networks.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE22BE312BBC1EEB00577484 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE492BBC269800577484 /* Responses */,
+				EE22BE482BBC268F00577484 /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EE22BE322BBC1EF900577484 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE1F2BBC1E4300577484 /* ViewController.swift */,
+				EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EE22BE332BBC1F1000577484 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE242BBC1E4500577484 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE22BE342BBC1F1F00577484 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EE22BE352BBC1F7D00577484 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE292BBC1E4500577484 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EE22BE482BBC268F00577484 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE4C2BBC275000577484 /* UseCase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		EE22BE492BBC269800577484 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE4A2BBC26E300577484 /* AEDResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +178,15 @@
 			dependencies = (
 			);
 			name = AMA;
+			packageProductDependencies = (
+				EE22BE372BBC24CC00577484 /* SnapKit */,
+				EE22BE392BBC24CC00577484 /* SnapKit-Dynamic */,
+				EE22BE3C2BBC251D00577484 /* RxBlocking */,
+				EE22BE3E2BBC251D00577484 /* RxBlocking-Dynamic */,
+				EE22BE402BBC251D00577484 /* RxCocoa */,
+				EE22BE422BBC251D00577484 /* RxCocoa-Dynamic */,
+				EE22BE442BBC251D00577484 /* RxRelay */,
+			);
 			productName = AMA;
 			productReference = EE22BE182BBC1E4300577484 /* AMA.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +215,10 @@
 				Base,
 			);
 			mainGroup = EE22BE0F2BBC1E4300577484;
+			packageReferences = (
+				EE22BE362BBC24CC00577484 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = EE22BE192BBC1E4300577484 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +235,6 @@
 			files = (
 				EE22BE282BBC1E4500577484 /* LaunchScreen.storyboard in Resources */,
 				EE22BE252BBC1E4500577484 /* Assets.xcassets in Resources */,
-				EE22BE232BBC1E4400577484 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +247,10 @@
 			files = (
 				EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */,
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
+				EE22BE472BBC265A00577484 /* Networks.swift in Sources */,
+				EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */,
+				EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */,
+				EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */,
 				EE22BE1E2BBC1E4300577484 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +258,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE22BE212BBC1E4400577484 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE22BE222BBC1E4400577484 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +397,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 585F6TK5A8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AMA/Info.plist;
+				INFOPLIST_FILE = AMA/Application/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +411,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CAP3.AMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +429,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 585F6TK5A8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AMA/Info.plist;
+				INFOPLIST_FILE = AMA/Application/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +443,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CAP3.AMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +474,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE22BE362BBC24CC00577484 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE22BE372BBC24CC00577484 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE362BBC24CC00577484 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EE22BE392BBC24CC00577484 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE362BBC24CC00577484 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		EE22BE3C2BBC251D00577484 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		EE22BE3E2BBC251D00577484 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		EE22BE402BBC251D00577484 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EE22BE422BBC251D00577484 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		EE22BE442BBC251D00577484 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE22BE102BBC1E4300577484 /* Project object */;
 }
