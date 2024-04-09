@@ -6,16 +6,17 @@
 //
 
 import UIKit
+import NMapsMap
 
 class ViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        view.backgroundColor = .blue
+        
+        view = NMFMapView(frame: view.frame)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
-
