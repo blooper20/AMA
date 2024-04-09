@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC3657C20C13185099D76337 /* libPods-AMA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFD4C27EB1DC597E8FCF7FF /* libPods-AMA.a */; };
 		EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */; };
 		EE22BE1E2BBC1E4300577484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */; };
 		EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1F2BBC1E4300577484 /* ViewController.swift */; };
 		EE22BE252BBC1E4500577484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE242BBC1E4500577484 /* Assets.xcassets */; };
 		EE22BE282BBC1E4500577484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */; };
 		EE22BE382BBC24CC00577484 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE372BBC24CC00577484 /* SnapKit */; };
-		EE22BE3A2BBC24CC00577484 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE392BBC24CC00577484 /* SnapKit-Dynamic */; };
 		EE22BE3D2BBC251D00577484 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE3C2BBC251D00577484 /* RxBlocking */; };
-		EE22BE3F2BBC251D00577484 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE3E2BBC251D00577484 /* RxBlocking-Dynamic */; };
 		EE22BE412BBC251D00577484 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE402BBC251D00577484 /* RxCocoa */; };
-		EE22BE432BBC251D00577484 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE422BBC251D00577484 /* RxCocoa-Dynamic */; };
 		EE22BE452BBC251D00577484 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE442BBC251D00577484 /* RxRelay */; };
 		EE22BE472BBC265A00577484 /* Networks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE462BBC265A00577484 /* Networks.swift */; };
 		EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4A2BBC26E300577484 /* AEDResponse.swift */; };
@@ -26,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BFD4C27EB1DC597E8FCF7FF /* libPods-AMA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2512C29C12A6D13F5E96D6CC /* Pods-AMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMA.release.xcconfig"; path = "Target Support Files/Pods-AMA/Pods-AMA.release.xcconfig"; sourceTree = "<group>"; };
+		ABBEDDA5CD96AB9AA18E223E /* Pods-AMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMA.debug.xcconfig"; path = "Target Support Files/Pods-AMA/Pods-AMA.debug.xcconfig"; sourceTree = "<group>"; };
 		EE22BE182BBC1E4300577484 /* AMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,20 +49,37 @@
 				EE22BE3D2BBC251D00577484 /* RxBlocking in Frameworks */,
 				EE22BE452BBC251D00577484 /* RxRelay in Frameworks */,
 				EE22BE412BBC251D00577484 /* RxCocoa in Frameworks */,
-				EE22BE3A2BBC24CC00577484 /* SnapKit-Dynamic in Frameworks */,
-				EE22BE432BBC251D00577484 /* RxCocoa-Dynamic in Frameworks */,
-				EE22BE3F2BBC251D00577484 /* RxBlocking-Dynamic in Frameworks */,
+				CC3657C20C13185099D76337 /* libPods-AMA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		728B7EE125374B7E5CE9CA6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD4C27EB1DC597E8FCF7FF /* libPods-AMA.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90D35CC7CF0B8432B574987D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABBEDDA5CD96AB9AA18E223E /* Pods-AMA.debug.xcconfig */,
+				2512C29C12A6D13F5E96D6CC /* Pods-AMA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EE22BE0F2BBC1E4300577484 = {
 			isa = PBXGroup;
 			children = (
 				EE22BE1A2BBC1E4300577484 /* AMA */,
 				EE22BE192BBC1E4300577484 /* Products */,
+				90D35CC7CF0B8432B574987D /* Pods */,
+				728B7EE125374B7E5CE9CA6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE22BE2C2BBC1E4500577484 /* Build configuration list for PBXNativeTarget "AMA" */;
 			buildPhases = (
+				754DD6C49D3CEC106EDAC8FE /* [CP] Check Pods Manifest.lock */,
 				EE22BE142BBC1E4300577484 /* Sources */,
 				EE22BE152BBC1E4300577484 /* Frameworks */,
 				EE22BE162BBC1E4300577484 /* Resources */,
+				B5FCC44D1C261F18BC0C9422 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,11 +200,8 @@
 			name = AMA;
 			packageProductDependencies = (
 				EE22BE372BBC24CC00577484 /* SnapKit */,
-				EE22BE392BBC24CC00577484 /* SnapKit-Dynamic */,
 				EE22BE3C2BBC251D00577484 /* RxBlocking */,
-				EE22BE3E2BBC251D00577484 /* RxBlocking-Dynamic */,
 				EE22BE402BBC251D00577484 /* RxCocoa */,
-				EE22BE422BBC251D00577484 /* RxCocoa-Dynamic */,
 				EE22BE442BBC251D00577484 /* RxRelay */,
 			);
 			productName = AMA;
@@ -239,6 +256,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		754DD6C49D3CEC106EDAC8FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FCC44D1C261F18BC0C9422 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AMA/Pods-AMA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AMA/Pods-AMA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AMA/Pods-AMA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE22BE142BBC1E4300577484 /* Sources */ = {
@@ -306,7 +365,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -321,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -369,7 +428,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -378,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -390,6 +449,7 @@
 		};
 		EE22BE2D2BBC1E4500577484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABBEDDA5CD96AB9AA18E223E /* Pods-AMA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +482,7 @@
 		};
 		EE22BE2E2BBC1E4500577484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2512C29C12A6D13F5E96D6CC /* Pods-AMA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,30 +561,15 @@
 			package = EE22BE362BBC24CC00577484 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		EE22BE392BBC24CC00577484 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE22BE362BBC24CC00577484 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		EE22BE3C2BBC251D00577484 /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
 		};
-		EE22BE3E2BBC251D00577484 /* RxBlocking-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxBlocking-Dynamic";
-		};
 		EE22BE402BBC251D00577484 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
-		};
-		EE22BE422BBC251D00577484 /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
 		};
 		EE22BE442BBC251D00577484 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
