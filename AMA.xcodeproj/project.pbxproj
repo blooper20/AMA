@@ -21,6 +21,10 @@
 		EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4A2BBC26E300577484 /* AEDResponse.swift */; };
 		EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4C2BBC275000577484 /* UseCase.swift */; };
 		EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */; };
+		EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE532BCE91EE00577484 /* BottomInfoView.swift */; };
+		EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE562BCE996C00577484 /* UIFont+.swift */; };
+		EE22BE592BCE9BD000577484 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE582BCE9BD000577484 /* HomeViewController.swift */; };
+		EE22BE5D2BCE9C1500577484 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE5C2BCE9C1500577484 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		EE22BE4A2BBC26E300577484 /* AEDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDResponse.swift; sourceTree = "<group>"; };
 		EE22BE4C2BBC275000577484 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingFigma.swift; sourceTree = "<group>"; };
+		EE22BE532BCE91EE00577484 /* BottomInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomInfoView.swift; sourceTree = "<group>"; };
+		EE22BE562BCE996C00577484 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		EE22BE582BCE9BD000577484 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EE22BE5C2BCE9C1500577484 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +142,9 @@
 		EE22BE322BBC1EF900577484 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE1F2BBC1E4300577484 /* ViewController.swift */,
+				EE22BE522BCE91AF00577484 /* ViewModels */,
+				EE22BE512BCE91A700577484 /* Views */,
+				EE22BE502BCE911600577484 /* ViewControllers */,
 				EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */,
 			);
 			path = Presentation;
@@ -151,6 +161,7 @@
 		EE22BE342BBC1F1F00577484 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EE22BE552BCE995600577484 /* Extensions */,
 				EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */,
 			);
 			path = Utils;
@@ -178,6 +189,55 @@
 				EE22BE4A2BBC26E300577484 /* AEDResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		EE22BE502BCE911600577484 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE1F2BBC1E4300577484 /* ViewController.swift */,
+				EE22BE582BCE9BD000577484 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE22BE512BCE91A700577484 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE5A2BCE9BE400577484 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE22BE522BCE91AF00577484 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EE22BE552BCE995600577484 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE562BCE996C00577484 /* UIFont+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE22BE5A2BCE9BE400577484 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE5B2BCE9BF900577484 /* SubViews */,
+				EE22BE5C2BCE9C1500577484 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE22BE5B2BCE9BF900577484 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE532BCE91EE00577484 /* BottomInfoView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,8 +365,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */,
+				EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */,
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
 				EE22BE472BBC265A00577484 /* Networks.swift in Sources */,
+				EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */,
+				EE22BE5D2BCE9C1500577484 /* HomeView.swift in Sources */,
+				EE22BE592BCE9BD000577484 /* HomeViewController.swift in Sources */,
 				EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */,
 				EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */,
 				EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */,

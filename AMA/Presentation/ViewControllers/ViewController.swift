@@ -8,7 +8,7 @@
 import UIKit
 import NMapsMap
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
