@@ -15,6 +15,8 @@ final class BottomInfoView: UIView {
         let label = UILabel()
         label.font = .mainTitle
         label.sizeToFit()
+        label.text = "@@@@@@@@"
+        label.textColor = .label
         
         return label
     }()
@@ -23,12 +25,17 @@ final class BottomInfoView: UIView {
         let label = UILabel()
         label.font = .subTitle
         label.sizeToFit()
+        label.text = "!!!!!"
+        label.textColor = .label
         
         return label
     }()
     
     private lazy var directionButton: UIButton = {
         let button = UIButton()
+        button.setTitle("###", for: .normal)
+        button.sizeToFit()
+        button.setTitleColor(.label, for: .normal)
         
         return button
     }()
@@ -37,6 +44,7 @@ final class BottomInfoView: UIView {
         override init(frame: CGRect) {
             super.init(frame: frame)
             
+            self.backgroundColor = .white
             setUpSubViews()
         }
         
@@ -52,28 +60,27 @@ extension BottomInfoView {
         
         self.addSubview(aedPositionLabel)
         aedPositionLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(calculatingHeight(height: 22))
-            make.left.equalToSuperview().inset(calculatingWidth(width: 22))
+            make.top.equalToSuperview().inset(calculatingHeight(height: 20))
+            make.left.equalToSuperview().inset(calculatingWidth(width: 30))
         }
         
         self.addSubview(aedAddressLabel)
         aedAddressLabel.snp.makeConstraints { make in
-            make.top.equalTo(aedPositionLabel).inset(calculatingHeight(height: 22))
-            make.left.equalToSuperview().inset(calculatingWidth(width: 22))
-            make.bottom.equalToSuperview().offset(calculatingHeight(height: 22))
+            make.top.equalTo(aedPositionLabel.snp.bottom).offset(calculatingHeight(height: 15))
+            make.left.equalToSuperview().inset(calculatingWidth(width: 30))
+            make.bottom.equalToSuperview().inset(calculatingHeight(height: 40))
         }
         
         self.addSubview(directionButton)
         directionButton.snp.makeConstraints { make in
-            make.verticalEdges.equalToSuperview().inset(calculatingHeight(height: 22))
-            make.right.equalToSuperview().inset(calculatingWidth(width: 22))
+            make.verticalEdges.equalToSuperview().inset(calculatingHeight(height: 20))
+            make.right.equalToSuperview().inset(calculatingWidth(width: 30))
         }
     }
     
     func binding(position: String, address: String, distance: String) {
         aedPositionLabel.text = position
         aedAddressLabel.text = address
-        directionButton.titleLabel?.text = distance
+        directionButton.setTitle(distance, for: .normal)
     }
-    
 }
