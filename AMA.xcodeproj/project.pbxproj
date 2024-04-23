@@ -10,7 +10,6 @@
 		CC3657C20C13185099D76337 /* libPods-AMA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFD4C27EB1DC597E8FCF7FF /* libPods-AMA.a */; };
 		EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */; };
 		EE22BE1E2BBC1E4300577484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */; };
-		EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1F2BBC1E4300577484 /* ViewController.swift */; };
 		EE22BE252BBC1E4500577484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE242BBC1E4500577484 /* Assets.xcassets */; };
 		EE22BE282BBC1E4500577484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */; };
 		EE22BE382BBC24CC00577484 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE372BBC24CC00577484 /* SnapKit */; };
@@ -23,9 +22,10 @@
 		EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */; };
 		EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE532BCE91EE00577484 /* BottomInfoView.swift */; };
 		EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE562BCE996C00577484 /* UIFont+.swift */; };
-		EE22BE592BCE9BD000577484 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE582BCE9BD000577484 /* HomeViewController.swift */; };
-		EE22BE5D2BCE9C1500577484 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE5C2BCE9C1500577484 /* HomeView.swift */; };
+		EE22BE592BCE9BD000577484 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE582BCE9BD000577484 /* MapViewController.swift */; };
 		EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1EB2BD7778300817204 /* UIColor+.swift */; };
+		EE5FE1EE2BD77CDC00817204 /* LocationDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */; };
+		EE5FE1F42BD78EB800817204 /* SheetPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		EE22BE182BBC1E4300577484 /* AMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE22BE1F2BBC1E4300577484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE22BE242BBC1E4500577484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE22BE272BBC1E4500577484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE22BE292BBC1E4500577484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,9 +44,10 @@
 		EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingFigma.swift; sourceTree = "<group>"; };
 		EE22BE532BCE91EE00577484 /* BottomInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomInfoView.swift; sourceTree = "<group>"; };
 		EE22BE562BCE996C00577484 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
-		EE22BE582BCE9BD000577484 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EE22BE5C2BCE9C1500577484 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EE22BE582BCE9BD000577484 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EE5FE1EB2BD7778300817204 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailInfoView.swift; sourceTree = "<group>"; };
+		EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +196,8 @@
 		EE22BE502BCE911600577484 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE1F2BBC1E4300577484 /* ViewController.swift */,
-				EE22BE582BCE9BD000577484 /* HomeViewController.swift */,
+				EE22BE582BCE9BD000577484 /* MapViewController.swift */,
+				EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -230,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				EE22BE5B2BCE9BF900577484 /* SubViews */,
-				EE22BE5C2BCE9C1500577484 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -239,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				EE22BE532BCE91EE00577484 /* BottomInfoView.swift */,
+				EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -367,17 +367,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */,
 				EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */,
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
 				EE22BE472BBC265A00577484 /* Networks.swift in Sources */,
 				EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */,
 				EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */,
-				EE22BE5D2BCE9C1500577484 /* HomeView.swift in Sources */,
-				EE22BE592BCE9BD000577484 /* HomeViewController.swift in Sources */,
+				EE22BE592BCE9BD000577484 /* MapViewController.swift in Sources */,
 				EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */,
+				EE5FE1F42BD78EB800817204 /* SheetPresentationViewController.swift in Sources */,
 				EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */,
 				EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */,
+				EE5FE1EE2BD77CDC00817204 /* LocationDetailInfoView.swift in Sources */,
 				EE22BE1E2BBC1E4300577484 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
