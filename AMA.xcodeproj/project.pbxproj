@@ -25,6 +25,7 @@
 		EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE562BCE996C00577484 /* UIFont+.swift */; };
 		EE22BE592BCE9BD000577484 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE582BCE9BD000577484 /* HomeViewController.swift */; };
 		EE22BE5D2BCE9C1500577484 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE5C2BCE9C1500577484 /* HomeView.swift */; };
+		EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1EB2BD7778300817204 /* UIColor+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		EE22BE562BCE996C00577484 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		EE22BE582BCE9BD000577484 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE22BE5C2BCE9C1500577484 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EE5FE1EB2BD7778300817204 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				EE22BE562BCE996C00577484 /* UIFont+.swift */,
+				EE5FE1EB2BD7778300817204 /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
 				EE22BE472BBC265A00577484 /* Networks.swift in Sources */,
 				EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */,
+				EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */,
 				EE22BE5D2BCE9C1500577484 /* HomeView.swift in Sources */,
 				EE22BE592BCE9BD000577484 /* HomeViewController.swift in Sources */,
 				EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */,

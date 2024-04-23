@@ -13,6 +13,7 @@ final class HomeViewController: UIViewController {
     
     //MARK: - Declaration
     private lazy var mapView = NMFMapView(frame: view.frame)
+    
     private lazy var homeView: BottomInfoView = {
         let view = BottomInfoView()
         view.layer.shadowOffset = CGSize(width: 0, height: -2)
@@ -50,12 +51,10 @@ extension HomeViewController {
     
     private func setMapOption() {
         
-        let circleOverlay = NMFCircleOverlay(NMGLatLng(lat: 37.3588564, lng: 127.1052092), radius: 500, fill: .red)
-        circleOverlay.outlineColor = .blue
+        let circleOverlay = NMFCircleOverlay(NMGLatLng(lat: 37.3588564, lng: 127.1052092), radius: 500, fill: .mainColor.withAlphaComponent(0.1))
+        circleOverlay.outlineColor = .mainColor
         circleOverlay.outlineWidth = 3
         circleOverlay.mapView = mapView
         mapView.positionMode = .direction
-        
-        
     }
 }
