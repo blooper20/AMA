@@ -17,6 +17,7 @@ final class LocationDetailInfoView: UIView {
         label.sizeToFit()
         label.text = "@@@@@@@@"
         label.textColor = .label
+        label.numberOfLines = 0
         
         return label
     }()
@@ -75,6 +76,7 @@ final class LocationDetailInfoView: UIView {
         button.setTitle("&&&&&&&", for: .normal)
         button.sizeToFit()
         button.titleLabel?.font = .commonLabel
+        button.setTitleColor(.label, for: .normal)
         
         return button
     }()
@@ -85,7 +87,7 @@ final class LocationDetailInfoView: UIView {
             super.init(frame: frame)
             
             self.backgroundColor = .white
-            setUpSubViews()
+            setUpCustomViews()
         }
         
         required init?(coder: NSCoder) {
@@ -96,7 +98,7 @@ final class LocationDetailInfoView: UIView {
 extension LocationDetailInfoView {
     
     //MARK: - Function
-    private func setUpSubViews() {
+    func setUpCustomViews() {
         
         self.addSubview(aedPositionLabel)
         aedPositionLabel.snp.makeConstraints { make in
@@ -108,40 +110,53 @@ extension LocationDetailInfoView {
         aedAddressLabel.snp.makeConstraints { make in
             make.top.equalTo(aedPositionLabel.snp.bottom).offset(calculatingHeight(height: 15))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
+            make.bottom.equalToSuperview().inset(calculatingHeight(height: 40))
         }
         
         self.addSubview(directionButton)
         directionButton.snp.makeConstraints { make in
+            make.verticalEdges.equalToSuperview().inset(calculatingHeight(height: 20))
+            make.right.equalToSuperview().inset(calculatingWidth(width: 30))
+        }
+    }
+    
+    func setUpMediumViews() {
+        
+        aedAddressLabel.snp.remakeConstraints { make in
+            make.top.equalTo(aedPositionLabel.snp.bottom).offset(calculatingHeight(height: 15))
+            make.left.equalToSuperview().inset(calculatingWidth(width: 30))
+        }
+        
+        self.addSubview(directionButton)
+        directionButton.snp.remakeConstraints { make in
             make.top.equalToSuperview().inset(calculatingHeight(height: 20))
             make.right.equalToSuperview().inset(calculatingWidth(width: 30))
         }
         
         self.addSubview(productNameLabel)
-        productNameLabel.snp.makeConstraints { make in
+        productNameLabel.snp.remakeConstraints { make in
             make.top.equalTo(aedAddressLabel.snp.bottom).offset(calculatingHeight(height: 30))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
         }
         
         self.addSubview(manufacturerLabel)
-        manufacturerLabel.snp.makeConstraints { make in
+        manufacturerLabel.snp.remakeConstraints { make in
             make.top.equalTo(productNameLabel.snp.bottom).offset(calculatingHeight(height: 15))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
         }
         
         self.addSubview(managerNameLabel)
-        managerNameLabel.snp.makeConstraints { make in
+        managerNameLabel.snp.remakeConstraints { make in
             make.top.equalTo(manufacturerLabel.snp.bottom).offset(calculatingHeight(height: 30))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
         }
         
         self.addSubview(managerPhoneButton)
-        managerPhoneButton.snp.makeConstraints { make in
+        managerPhoneButton.snp.remakeConstraints { make in
             make.top.equalTo(managerNameLabel.snp.bottom).offset(calculatingHeight(height: 20))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
             make.bottom.equalToSuperview().inset(calculatingHeight(height: 30))
         }
-        
-        
     }
     
     func binding() {

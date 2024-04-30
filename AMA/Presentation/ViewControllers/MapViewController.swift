@@ -13,15 +13,9 @@ final class MapViewController: UIViewController {
     
     //MARK: - Declaration
     private lazy var mapView = NMFMapView(frame: view.frame)
+    private lazy var viewControllerToPresent = SheetPresentationViewController()
     
-    private lazy var homeView: BottomInfoView = {
-        let view = BottomInfoView()
-        view.layer.shadowOffset = CGSize(width: 0, height: -2)
-        view.layer.shadowOpacity = 0.3
-        view.layer.shadowRadius = 10
-        
-        return view
-    }()
+    private lazy var homeView = BottomInfoView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +38,6 @@ extension MapViewController {
         
         self.view.addSubview(homeView)
         homeView.snp.makeConstraints { make in
-//            make.top.equalTo(mapView.snp.bottom)
             make.horizontalEdges.bottom.equalToSuperview()
             make.bottom.equalToSuperview()
             make.height.equalTo(calculatingHeight(height: 150))
@@ -73,57 +66,39 @@ extension MapViewController {
     }
     
     private func showMyViewControllerInACustomizedSheet() {
-        let viewControllerToPresent = SheetPresentationViewController()
-        
         
         if let sheet = viewControllerToPresent.sheetPresentationController {
             
+            let small: UISheetPresentationController.Detent = .custom(identifier: viewControllerToPresent.smallIdentifier) { context in
+                return calculatingHeight(height: 120)
+            }
+            
             sheet.delegate = self
-            sheet.detents = [.medium()]
-            sheet.selectedDetentIdentifier = .medium
+            
+            sheet.detents = [small, .medium()]
+            
+            sheet.selectedDetentIdentifier = viewControllerToPresent.smallIdentifier
             sheet.prefersGrabberVisible = true
-            sheet.preferredCornerRadius = 0
         }
         present(viewControllerToPresent, animated: true, completion: nil)
     }
     
-    private func reducingMap() {
-        
-        //FIXME: - Animation 필요
-        self.mapView.snp.remakeConstraints { make in
-            make.top.horizontalEdges.equalToSuperview()
-            make.bottom.equalToSuperview().inset(self.view.frame.height/2)
-        }
-    }
-    
-    private func recoveringMap() {
-        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
-            
-            self.mapView.snp.remakeConstraints { make in
-                make.edges.equalToSuperview()
-            }
-            
-            self.homeView.snp.remakeConstraints { make in
-                make.horizontalEdges.bottom.equalToSuperview()
-                make.bottom.equalToSuperview()
-                make.height.equalTo(calculatingHeight(height: 150))
-            }
-            
-            self.view.layoutIfNeeded()
-            
-        }, completion: nil)
-    }
-    
     @objc func didTapView(_ sender: UITapGestureRecognizer) {
         showMyViewControllerInACustomizedSheet()
-        reducingMap()
     }
 }
 
 //MARK: - Delegate
 extension MapViewController: UISheetPresentationControllerDelegate{
     
-    func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
-        recoveringMap()
+    func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController) {
+        
+        sheetPresentationController.animateChanges {
+            if sheetPresentationController.selectedDetentIdentifier == .medium {
+                viewControllerToPresent.locationDetailInfoView.setUpMediumViews()
+            } else {
+                viewControllerToPresent.locationDetailInfoView.setUpCustomViews()
+            }
+        }
     }
 }

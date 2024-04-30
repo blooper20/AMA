@@ -9,7 +9,9 @@ import UIKit
 
 final class SheetPresentationViewController: UIViewController {
     
-    private lazy var locationDetailInfoView = LocationDetailInfoView()
+    lazy var locationDetailInfoView = LocationDetailInfoView()
+    
+    let smallIdentifier: UISheetPresentationController.Detent.Identifier = .init(rawValue: "small")
     
     override func viewDidLoad() {
         super.viewDidLoad()
