@@ -100,6 +100,10 @@ extension LocationDetailInfoView {
     //MARK: - Function
     func setUpCustomViews() {
         
+        self.subviews.map { view in
+            view.removeFromSuperview()
+        }
+        
         self.addSubview(aedPositionLabel)
         aedPositionLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(calculatingHeight(height: 20))
@@ -110,22 +114,16 @@ extension LocationDetailInfoView {
         aedAddressLabel.snp.makeConstraints { make in
             make.top.equalTo(aedPositionLabel.snp.bottom).offset(calculatingHeight(height: 15))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
-            make.bottom.equalToSuperview().inset(calculatingHeight(height: 40))
         }
         
         self.addSubview(directionButton)
         directionButton.snp.makeConstraints { make in
-            make.verticalEdges.equalToSuperview().inset(calculatingHeight(height: 20))
+            make.top.equalToSuperview().inset(calculatingHeight(height: 20))
             make.right.equalToSuperview().inset(calculatingWidth(width: 30))
         }
     }
     
     func setUpMediumViews() {
-        
-        aedAddressLabel.snp.remakeConstraints { make in
-            make.top.equalTo(aedPositionLabel.snp.bottom).offset(calculatingHeight(height: 15))
-            make.left.equalToSuperview().inset(calculatingWidth(width: 30))
-        }
         
         self.addSubview(directionButton)
         directionButton.snp.remakeConstraints { make in
@@ -155,7 +153,6 @@ extension LocationDetailInfoView {
         managerPhoneButton.snp.remakeConstraints { make in
             make.top.equalTo(managerNameLabel.snp.bottom).offset(calculatingHeight(height: 20))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
-            make.bottom.equalToSuperview().inset(calculatingHeight(height: 30))
         }
     }
     
