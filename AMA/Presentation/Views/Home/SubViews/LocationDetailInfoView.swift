@@ -100,7 +100,7 @@ extension LocationDetailInfoView {
     //MARK: - Function
     func setUpCustomViews() {
         
-        self.subviews.map { view in
+        self.subviews.forEach { view in
             view.removeFromSuperview()
         }
         

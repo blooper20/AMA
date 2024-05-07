@@ -26,6 +26,8 @@
 		EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1EB2BD7778300817204 /* UIColor+.swift */; };
 		EE5FE1EE2BD77CDC00817204 /* LocationDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */; };
 		EE5FE1F42BD78EB800817204 /* SheetPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */; };
+		EEE3CD8E2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD8D2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift */; };
+		EEE3CD902BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD8F2BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		EE5FE1EB2BD7778300817204 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailInfoView.swift; sourceTree = "<group>"; };
 		EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentationViewController.swift; sourceTree = "<group>"; };
+		EEE3CD8D2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISheetPresentationController.Detent.Identifier+.swift"; sourceTree = "<group>"; };
+		EEE3CD8F2BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISheetPresentationController.Detent+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 			children = (
 				EE22BE562BCE996C00577484 /* UIFont+.swift */,
 				EE5FE1EB2BD7778300817204 /* UIColor+.swift */,
+				EEE3CD8D2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift */,
+				EEE3CD8F2BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,11 +375,13 @@
 			files = (
 				EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */,
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
+				EEE3CD8E2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift in Sources */,
 				EE22BE472BBC265A00577484 /* Networks.swift in Sources */,
 				EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */,
 				EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */,
 				EE22BE592BCE9BD000577484 /* MapViewController.swift in Sources */,
 				EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */,
+				EEE3CD902BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift in Sources */,
 				EE5FE1F42BD78EB800817204 /* SheetPresentationViewController.swift in Sources */,
 				EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */,
 				EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */,

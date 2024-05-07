@@ -11,8 +11,6 @@ final class SheetPresentationViewController: UIViewController {
     
     lazy var locationDetailInfoView = LocationDetailInfoView()
     
-    let smallIdentifier: UISheetPresentationController.Detent.Identifier = .init(rawValue: "small")
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

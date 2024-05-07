@@ -69,15 +69,11 @@ extension MapViewController {
         
         if let sheet = viewControllerToPresent.sheetPresentationController {
             
-            let small: UISheetPresentationController.Detent = .custom(identifier: viewControllerToPresent.smallIdentifier) { context in
-                return calculatingHeight(height: 120)
-            }
-            
             sheet.delegate = self
             
-            sheet.detents = [small, .medium()]
+            sheet.detents = [.small(), .medium()]
             
-            sheet.selectedDetentIdentifier = viewControllerToPresent.smallIdentifier
+            sheet.selectedDetentIdentifier = .small
             sheet.prefersGrabberVisible = true
         }
         present(viewControllerToPresent, animated: true, completion: nil)
@@ -94,10 +90,19 @@ extension MapViewController: UISheetPresentationControllerDelegate{
     func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController) {
         
         sheetPresentationController.animateChanges {
-            if sheetPresentationController.selectedDetentIdentifier == .medium {
+            
+            guard let detentIdentifier = sheetPresentationController.selectedDetentIdentifier else { return }
+            
+            switch detentIdentifier {
+            
+            case .medium:
                 viewControllerToPresent.locationDetailInfoView.setUpMediumViews()
-            } else {
+            
+            case .small:
                 viewControllerToPresent.locationDetailInfoView.setUpCustomViews()
+            
+            default:
+                break
             }
         }
     }
