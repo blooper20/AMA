@@ -14,13 +14,12 @@ final class UseCase {
     let disposeBag = DisposeBag()
     
     let networks = Networks.shared
-    
 }
 
 extension UseCase {
     
-    //MARK: - Title
-//    func getSearching(brand: String, text: String) -> Observable<SongsResponse> {
-//        return networks.getData(url: self.networks.getSearchURL() + "brand=\(brand)&\(text)")
-//    }
+    //MARK: - AED Info
+    func getAED(location: String) -> Observable<AEDResponse> {
+        return networks.getData(url: self.networks.getURL() + location)
+    }
 }

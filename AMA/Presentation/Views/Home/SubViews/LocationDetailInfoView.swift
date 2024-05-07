@@ -156,13 +156,13 @@ extension LocationDetailInfoView {
         }
     }
     
-    func binding() {
-        aedPositionLabel.text = ""
-        aedAddressLabel.text = ""
+    func binding(info: Info) {
+        aedPositionLabel.text = info.location
+        aedAddressLabel.text = info.address
         directionButton.setTitle("", for: .normal)
-        productNameLabel.text = ""
-        manufacturerLabel.text = ""
-        managerNameLabel.text = ""
-        managerPhoneButton.setTitle("", for: .normal)
+        productNameLabel.text = info.modelName
+        manufacturerLabel.text = info.manufacturer
+        managerNameLabel.text = info.managerName
+        managerPhoneButton.setTitle(info.managerTel, for: .normal)
     }
 }
