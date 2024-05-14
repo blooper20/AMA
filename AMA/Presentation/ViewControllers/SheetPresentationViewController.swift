@@ -11,9 +11,8 @@ final class SheetPresentationViewController: UIViewController {
     
     lazy var locationDetailInfoView = LocationDetailInfoView()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func loadView() {
+     
         view = locationDetailInfoView
     }
 }

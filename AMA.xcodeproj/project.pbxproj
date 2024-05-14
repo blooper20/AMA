@@ -15,11 +15,10 @@
 		EE22BE382BBC24CC00577484 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE372BBC24CC00577484 /* SnapKit */; };
 		EE22BE412BBC251D00577484 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE402BBC251D00577484 /* RxCocoa */; };
 		EE22BE452BBC251D00577484 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE442BBC251D00577484 /* RxRelay */; };
-		EE22BE472BBC265A00577484 /* Networks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE462BBC265A00577484 /* Networks.swift */; };
+		EE22BE472BBC265A00577484 /* AEDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE462BBC265A00577484 /* AEDNetwork.swift */; };
 		EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4A2BBC26E300577484 /* AEDResponse.swift */; };
-		EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4C2BBC275000577484 /* UseCase.swift */; };
+		EE22BE4D2BBC275000577484 /* AEDUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4C2BBC275000577484 /* AEDUseCase.swift */; };
 		EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */; };
-		EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE532BCE91EE00577484 /* BottomInfoView.swift */; };
 		EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE562BCE996C00577484 /* UIFont+.swift */; };
 		EE22BE592BCE9BD000577484 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE582BCE9BD000577484 /* MapViewController.swift */; };
 		EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1EB2BD7778300817204 /* UIColor+.swift */; };
@@ -30,6 +29,8 @@
 		EEE3CD922BEA0D4200D3FA30 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EEE3CD912BEA0D4200D3FA30 /* RxSwift */; };
 		EEE3CD942BEA0F0600D3FA30 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD932BEA0F0600D3FA30 /* HomeViewModel.swift */; };
 		EEE3CD972BEA0F8400D3FA30 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */; };
+		EEE3CD9A2BEA319500D3FA30 /* AEDUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */; };
+		EEE3CD9C2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,11 +43,10 @@
 		EE22BE242BBC1E4500577484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE22BE272BBC1E4500577484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE22BE292BBC1E4500577484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE22BE462BBC265A00577484 /* Networks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networks.swift; sourceTree = "<group>"; };
+		EE22BE462BBC265A00577484 /* AEDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDNetwork.swift; sourceTree = "<group>"; };
 		EE22BE4A2BBC26E300577484 /* AEDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDResponse.swift; sourceTree = "<group>"; };
-		EE22BE4C2BBC275000577484 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		EE22BE4C2BBC275000577484 /* AEDUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDUseCase.swift; sourceTree = "<group>"; };
 		EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingFigma.swift; sourceTree = "<group>"; };
-		EE22BE532BCE91EE00577484 /* BottomInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomInfoView.swift; sourceTree = "<group>"; };
 		EE22BE562BCE996C00577484 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		EE22BE582BCE9BD000577484 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EE5FE1EB2BD7778300817204 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		EEE3CD8F2BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISheetPresentationController.Detent+.swift"; sourceTree = "<group>"; };
 		EEE3CD932BEA0F0600D3FA30 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDUseCaseProtocol.swift; sourceTree = "<group>"; };
+		EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerUseCaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +137,7 @@
 		EE22BE302BBC1EE300577484 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE462BBC265A00577484 /* Networks.swift */,
+				EE22BE462BBC265A00577484 /* AEDNetwork.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -189,7 +191,8 @@
 		EE22BE482BBC268F00577484 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE4C2BBC275000577484 /* UseCase.swift */,
+				EEE3CD982BEA312400D3FA30 /* Protocols */,
+				EE22BE4C2BBC275000577484 /* AEDUseCase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -249,7 +252,6 @@
 		EE22BE5B2BCE9BF900577484 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE532BCE91EE00577484 /* BottomInfoView.swift */,
 				EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */,
 			);
 			path = SubViews;
@@ -259,6 +261,15 @@
 			isa = PBXGroup;
 			children = (
 				EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EEE3CD982BEA312400D3FA30 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */,
+				EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -389,16 +400,17 @@
 			files = (
 				EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */,
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
+				EEE3CD9A2BEA319500D3FA30 /* AEDUseCaseProtocol.swift in Sources */,
 				EEE3CD8E2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift in Sources */,
-				EE22BE472BBC265A00577484 /* Networks.swift in Sources */,
-				EE22BE542BCE91EE00577484 /* BottomInfoView.swift in Sources */,
+				EE22BE472BBC265A00577484 /* AEDNetwork.swift in Sources */,
+				EEE3CD9C2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift in Sources */,
 				EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */,
 				EEE3CD972BEA0F8400D3FA30 /* ViewModel.swift in Sources */,
 				EE22BE592BCE9BD000577484 /* MapViewController.swift in Sources */,
 				EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */,
 				EEE3CD902BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift in Sources */,
 				EE5FE1F42BD78EB800817204 /* SheetPresentationViewController.swift in Sources */,
-				EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */,
+				EE22BE4D2BBC275000577484 /* AEDUseCase.swift in Sources */,
 				EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */,
 				EE5FE1EE2BD77CDC00817204 /* LocationDetailInfoView.swift in Sources */,
 				EEE3CD942BEA0F0600D3FA30 /* HomeViewModel.swift in Sources */,

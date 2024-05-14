@@ -15,54 +15,45 @@ final class MapViewController: UIViewController {
     private lazy var mapView = NMFMapView(frame: view.frame)
     private lazy var viewControllerToPresent = SheetPresentationViewController()
     
-    private lazy var homeView = BottomInfoView()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setSubViews()
+        self.view = mapView
+        
         setMapOption()
-        setUIGesture()
+        setMapMarker()
     }
 }
 
 extension MapViewController {
     
     //MARK: - Function
-    private func setSubViews() {
+    private func setMapMarker() {
+        let marker = NMFMarker()
+        marker.position = NMGLatLng(lat: 37.3588564, lng: 127.1052092)
+        marker.width = CGFloat(NMF_MARKER_SIZE_AUTO)
+        marker.height = CGFloat(NMF_MARKER_SIZE_AUTO)
         
-        self.view.addSubview(mapView)
-        mapView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+        let handler = { [weak self] (overlay: NMFOverlay) -> Bool in
+            self?.showMyViewControllerInACustomizedSheet()
+            
+            return true
         }
         
-        self.view.addSubview(homeView)
-        homeView.snp.makeConstraints { make in
-            make.horizontalEdges.bottom.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.height.equalTo(calculatingHeight(height: 150))
-        }
+        marker.touchHandler = handler
+        
+        marker.mapView = mapView
     }
     
     private func setMapOption() {
         
         let circleOverlay = NMFCircleOverlay(NMGLatLng(lat: 37.3588564, lng: 127.1052092), radius: 500, fill: .mainColor.withAlphaComponent(0.1))
+        
         circleOverlay.outlineColor = .mainColor
         circleOverlay.outlineWidth = 3
         circleOverlay.mapView = mapView
+        
         mapView.positionMode = .direction
-    }
-    
-    private func setUIGesture() {
-        
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapView(_:)))
-        
-        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(didTapView(_:)))
-        
-        swipeGestureRecognizer.direction = .up
-        
-        self.homeView.addGestureRecognizer(tapGestureRecognizer)
-        self.homeView.addGestureRecognizer(swipeGestureRecognizer)
     }
     
     private func showMyViewControllerInACustomizedSheet() {
@@ -76,11 +67,11 @@ extension MapViewController {
             sheet.selectedDetentIdentifier = .small
             sheet.prefersGrabberVisible = true
         }
-        present(viewControllerToPresent, animated: true, completion: nil)
-    }
-    
-    @objc func didTapView(_ sender: UITapGestureRecognizer) {
-        showMyViewControllerInACustomizedSheet()
+        
+        viewControllerToPresent.locationDetailInfoView.removeSubviews()
+        viewControllerToPresent.locationDetailInfoView.setUpCustomViews()
+        
+        present(viewControllerToPresent, animated: true)
     }
 }
 
@@ -94,11 +85,12 @@ extension MapViewController: UISheetPresentationControllerDelegate{
             guard let detentIdentifier = sheetPresentationController.selectedDetentIdentifier else { return }
             
             switch detentIdentifier {
-            
+                
             case .medium:
                 viewControllerToPresent.locationDetailInfoView.setUpMediumViews()
-            
+                
             case .small:
+                viewControllerToPresent.locationDetailInfoView.removeSubviews()
                 viewControllerToPresent.locationDetailInfoView.setUpCustomViews()
             
             default:

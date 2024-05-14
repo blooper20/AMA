@@ -87,7 +87,6 @@ final class LocationDetailInfoView: UIView {
             super.init(frame: frame)
             
             self.backgroundColor = .white
-            setUpCustomViews()
         }
         
         required init?(coder: NSCoder) {
@@ -98,11 +97,14 @@ final class LocationDetailInfoView: UIView {
 extension LocationDetailInfoView {
     
     //MARK: - Function
-    func setUpCustomViews() {
+    func removeSubviews() {
         
         self.subviews.forEach { view in
             view.removeFromSuperview()
         }
+    }
+    
+    func setUpCustomViews() {
         
         self.addSubview(aedPositionLabel)
         aedPositionLabel.snp.makeConstraints { make in
@@ -157,7 +159,7 @@ extension LocationDetailInfoView {
     }
     
     func binding(info: Info) {
-        aedPositionLabel.text = info.location
+        aedPositionLabel.text = info.place
         aedAddressLabel.text = info.address
         directionButton.setTitle("", for: .normal)
         productNameLabel.text = info.modelName
