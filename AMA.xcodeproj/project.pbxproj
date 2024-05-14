@@ -31,6 +31,8 @@
 		EEE3CD972BEA0F8400D3FA30 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */; };
 		EEE3CD9A2BEA319500D3FA30 /* AEDUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */; };
 		EEE3CD9C2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */; };
+		EEE3CD9E2BF3564C00D3FA30 /* AEDWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD9D2BF3564C00D3FA30 /* AEDWebViewController.swift */; };
+		EEE3CDA02BF3571300D3FA30 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD9F2BF3571300D3FA30 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDUseCaseProtocol.swift; sourceTree = "<group>"; };
 		EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerUseCaseProtocol.swift; sourceTree = "<group>"; };
+		EEE3CD9D2BF3564C00D3FA30 /* AEDWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDWebViewController.swift; sourceTree = "<group>"; };
+		EEE3CD9F2BF3571300D3FA30 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,8 @@
 			children = (
 				EE22BE582BCE9BD000577484 /* MapViewController.swift */,
 				EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */,
+				EEE3CD9D2BF3564C00D3FA30 /* AEDWebViewController.swift */,
+				EEE3CD9F2BF3571300D3FA30 /* CustomTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -399,6 +405,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */,
+				EEE3CD9E2BF3564C00D3FA30 /* AEDWebViewController.swift in Sources */,
+				EEE3CDA02BF3571300D3FA30 /* CustomTabBarController.swift in Sources */,
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
 				EEE3CD9A2BEA319500D3FA30 /* AEDUseCaseProtocol.swift in Sources */,
 				EEE3CD8E2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift in Sources */,

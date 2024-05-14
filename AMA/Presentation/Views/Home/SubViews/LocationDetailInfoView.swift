@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class LocationDetailInfoView: UIView {
-
+    
     //MARK: - Declaration
     private lazy var aedPositionLabel: UILabel = {
         let label = UILabel()
@@ -80,18 +80,18 @@ final class LocationDetailInfoView: UIView {
         
         return button
     }()
-
+    
     
     //MARK: - Initialize
-        override init(frame: CGRect) {
-            super.init(frame: frame)
-            
-            self.backgroundColor = .white
-        }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
-        required init?(coder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
+        self.backgroundColor = .white
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 extension LocationDetailInfoView {
