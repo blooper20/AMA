@@ -10,17 +10,29 @@
 		CC3657C20C13185099D76337 /* libPods-AMA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFD4C27EB1DC597E8FCF7FF /* libPods-AMA.a */; };
 		EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */; };
 		EE22BE1E2BBC1E4300577484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */; };
-		EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE1F2BBC1E4300577484 /* ViewController.swift */; };
 		EE22BE252BBC1E4500577484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE242BBC1E4500577484 /* Assets.xcassets */; };
 		EE22BE282BBC1E4500577484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */; };
 		EE22BE382BBC24CC00577484 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE372BBC24CC00577484 /* SnapKit */; };
-		EE22BE3D2BBC251D00577484 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE3C2BBC251D00577484 /* RxBlocking */; };
 		EE22BE412BBC251D00577484 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE402BBC251D00577484 /* RxCocoa */; };
 		EE22BE452BBC251D00577484 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EE22BE442BBC251D00577484 /* RxRelay */; };
-		EE22BE472BBC265A00577484 /* Networks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE462BBC265A00577484 /* Networks.swift */; };
+		EE22BE472BBC265A00577484 /* AEDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE462BBC265A00577484 /* AEDNetwork.swift */; };
 		EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4A2BBC26E300577484 /* AEDResponse.swift */; };
-		EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4C2BBC275000577484 /* UseCase.swift */; };
+		EE22BE4D2BBC275000577484 /* AEDUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4C2BBC275000577484 /* AEDUseCase.swift */; };
 		EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */; };
+		EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE562BCE996C00577484 /* UIFont+.swift */; };
+		EE22BE592BCE9BD000577484 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22BE582BCE9BD000577484 /* MapViewController.swift */; };
+		EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1EB2BD7778300817204 /* UIColor+.swift */; };
+		EE5FE1EE2BD77CDC00817204 /* LocationDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */; };
+		EE5FE1F42BD78EB800817204 /* SheetPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */; };
+		EEE3CD8E2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD8D2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift */; };
+		EEE3CD902BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD8F2BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift */; };
+		EEE3CD922BEA0D4200D3FA30 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EEE3CD912BEA0D4200D3FA30 /* RxSwift */; };
+		EEE3CD942BEA0F0600D3FA30 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD932BEA0F0600D3FA30 /* HomeViewModel.swift */; };
+		EEE3CD972BEA0F8400D3FA30 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */; };
+		EEE3CD9A2BEA319500D3FA30 /* AEDUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */; };
+		EEE3CD9C2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */; };
+		EEE3CD9E2BF3564C00D3FA30 /* AEDWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD9D2BF3564C00D3FA30 /* AEDWebViewController.swift */; };
+		EEE3CDA02BF3571300D3FA30 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CD9F2BF3571300D3FA30 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +42,26 @@
 		EE22BE182BBC1E4300577484 /* AMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE22BE1B2BBC1E4300577484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE22BE1D2BBC1E4300577484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE22BE1F2BBC1E4300577484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE22BE242BBC1E4500577484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE22BE272BBC1E4500577484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE22BE292BBC1E4500577484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE22BE462BBC265A00577484 /* Networks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networks.swift; sourceTree = "<group>"; };
+		EE22BE462BBC265A00577484 /* AEDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDNetwork.swift; sourceTree = "<group>"; };
 		EE22BE4A2BBC26E300577484 /* AEDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDResponse.swift; sourceTree = "<group>"; };
-		EE22BE4C2BBC275000577484 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		EE22BE4C2BBC275000577484 /* AEDUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDUseCase.swift; sourceTree = "<group>"; };
 		EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingFigma.swift; sourceTree = "<group>"; };
+		EE22BE562BCE996C00577484 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		EE22BE582BCE9BD000577484 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EE5FE1EB2BD7778300817204 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailInfoView.swift; sourceTree = "<group>"; };
+		EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentationViewController.swift; sourceTree = "<group>"; };
+		EEE3CD8D2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISheetPresentationController.Detent.Identifier+.swift"; sourceTree = "<group>"; };
+		EEE3CD8F2BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISheetPresentationController.Detent+.swift"; sourceTree = "<group>"; };
+		EEE3CD932BEA0F0600D3FA30 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDUseCaseProtocol.swift; sourceTree = "<group>"; };
+		EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerUseCaseProtocol.swift; sourceTree = "<group>"; };
+		EEE3CD9D2BF3564C00D3FA30 /* AEDWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEDWebViewController.swift; sourceTree = "<group>"; };
+		EEE3CD9F2BF3571300D3FA30 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +70,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE22BE382BBC24CC00577484 /* SnapKit in Frameworks */,
-				EE22BE3D2BBC251D00577484 /* RxBlocking in Frameworks */,
 				EE22BE452BBC251D00577484 /* RxRelay in Frameworks */,
+				EEE3CD922BEA0D4200D3FA30 /* RxSwift in Frameworks */,
 				EE22BE412BBC251D00577484 /* RxCocoa in Frameworks */,
 				CC3657C20C13185099D76337 /* libPods-AMA.a in Frameworks */,
 			);
@@ -117,7 +141,7 @@
 		EE22BE302BBC1EE300577484 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE462BBC265A00577484 /* Networks.swift */,
+				EE22BE462BBC265A00577484 /* AEDNetwork.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -134,7 +158,9 @@
 		EE22BE322BBC1EF900577484 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE1F2BBC1E4300577484 /* ViewController.swift */,
+				EE22BE522BCE91AF00577484 /* ViewModels */,
+				EE22BE512BCE91A700577484 /* Views */,
+				EE22BE502BCE911600577484 /* ViewControllers */,
 				EE22BE262BBC1E4500577484 /* LaunchScreen.storyboard */,
 			);
 			path = Presentation;
@@ -151,6 +177,8 @@
 		EE22BE342BBC1F1F00577484 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EEE3CD952BEA0F6F00D3FA30 /* Protocols */,
+				EE22BE552BCE995600577484 /* Extensions */,
 				EE22BE4E2BBC27EE00577484 /* CalculatingFigma.swift */,
 			);
 			path = Utils;
@@ -167,7 +195,8 @@
 		EE22BE482BBC268F00577484 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
-				EE22BE4C2BBC275000577484 /* UseCase.swift */,
+				EEE3CD982BEA312400D3FA30 /* Protocols */,
+				EE22BE4C2BBC275000577484 /* AEDUseCase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -178,6 +207,77 @@
 				EE22BE4A2BBC26E300577484 /* AEDResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		EE22BE502BCE911600577484 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE582BCE9BD000577484 /* MapViewController.swift */,
+				EE5FE1F32BD78EB800817204 /* SheetPresentationViewController.swift */,
+				EEE3CD9D2BF3564C00D3FA30 /* AEDWebViewController.swift */,
+				EEE3CD9F2BF3571300D3FA30 /* CustomTabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE22BE512BCE91A700577484 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE5A2BCE9BE400577484 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE22BE522BCE91AF00577484 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CD932BEA0F0600D3FA30 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EE22BE552BCE995600577484 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE562BCE996C00577484 /* UIFont+.swift */,
+				EE5FE1EB2BD7778300817204 /* UIColor+.swift */,
+				EEE3CD8D2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift */,
+				EEE3CD8F2BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE22BE5A2BCE9BE400577484 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE22BE5B2BCE9BF900577484 /* SubViews */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE22BE5B2BCE9BF900577484 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FE1ED2BD77CDC00817204 /* LocationDetailInfoView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		EEE3CD952BEA0F6F00D3FA30 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CD962BEA0F8400D3FA30 /* ViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EEE3CD982BEA312400D3FA30 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CD992BEA319500D3FA30 /* AEDUseCaseProtocol.swift */,
+				EEE3CD9B2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +300,9 @@
 			name = AMA;
 			packageProductDependencies = (
 				EE22BE372BBC24CC00577484 /* SnapKit */,
-				EE22BE3C2BBC251D00577484 /* RxBlocking */,
 				EE22BE402BBC251D00577484 /* RxCocoa */,
 				EE22BE442BBC251D00577484 /* RxRelay */,
+				EEE3CD912BEA0D4200D3FA30 /* RxSwift */,
 			);
 			productName = AMA;
 			productReference = EE22BE182BBC1E4300577484 /* AMA.app */;
@@ -304,12 +404,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE22BE202BBC1E4300577484 /* ViewController.swift in Sources */,
+				EE22BE572BCE996C00577484 /* UIFont+.swift in Sources */,
+				EEE3CD9E2BF3564C00D3FA30 /* AEDWebViewController.swift in Sources */,
+				EEE3CDA02BF3571300D3FA30 /* CustomTabBarController.swift in Sources */,
 				EE22BE1C2BBC1E4300577484 /* AppDelegate.swift in Sources */,
-				EE22BE472BBC265A00577484 /* Networks.swift in Sources */,
+				EEE3CD9A2BEA319500D3FA30 /* AEDUseCaseProtocol.swift in Sources */,
+				EEE3CD8E2BEA05A900D3FA30 /* UISheetPresentationController.Detent.Identifier+.swift in Sources */,
+				EE22BE472BBC265A00577484 /* AEDNetwork.swift in Sources */,
+				EEE3CD9C2BEA4A2200D3FA30 /* MapMarkerUseCaseProtocol.swift in Sources */,
+				EE5FE1EC2BD7778300817204 /* UIColor+.swift in Sources */,
+				EEE3CD972BEA0F8400D3FA30 /* ViewModel.swift in Sources */,
+				EE22BE592BCE9BD000577484 /* MapViewController.swift in Sources */,
 				EE22BE4F2BBC27EE00577484 /* CalculatingFigma.swift in Sources */,
-				EE22BE4D2BBC275000577484 /* UseCase.swift in Sources */,
+				EEE3CD902BEA075300D3FA30 /* UISheetPresentationController.Detent+.swift in Sources */,
+				EE5FE1F42BD78EB800817204 /* SheetPresentationViewController.swift in Sources */,
+				EE22BE4D2BBC275000577484 /* AEDUseCase.swift in Sources */,
 				EE22BE4B2BBC26E300577484 /* AEDResponse.swift in Sources */,
+				EE5FE1EE2BD77CDC00817204 /* LocationDetailInfoView.swift in Sources */,
+				EEE3CD942BEA0F0600D3FA30 /* HomeViewModel.swift in Sources */,
 				EE22BE1E2BBC1E4300577484 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +575,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +608,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,11 +673,6 @@
 			package = EE22BE362BBC24CC00577484 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		EE22BE3C2BBC251D00577484 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
 		EE22BE402BBC251D00577484 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
@@ -575,6 +682,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
+		};
+		EEE3CD912BEA0D4200D3FA30 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE22BE3B2BBC251D00577484 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
