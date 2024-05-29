@@ -8,10 +8,17 @@
 import UIKit
 import SnapKit
 import NMapsMap
+import RxSwift
+import RxRelay
 
 final class MapViewController: UIViewController {
     
     //MARK: - Declaration
+    var disposeBag = DisposeBag()
+    var clusterer: NMCClusterer<ItemKey>?
+    let viewModel = MapViewModel()
+    var keyTagMap: [ItemKey: NSNull] = [:]
+    
     private lazy var mapView = NMFMapView(frame: view.frame)
     private lazy var viewControllerToPresent = SheetPresentationViewController()
     
@@ -20,43 +27,80 @@ final class MapViewController: UIViewController {
         
         self.view = mapView
         
+        bindViewModel()
         setMapOption()
-        setMapMarker()
     }
 }
 
 extension MapViewController {
     
+    //MARK: ViewModel
+    private func bindViewModel() {
+        let input = MapViewModel.Input.init(
+            viewDidLoad: .just(())
+        )
+        
+        let output = viewModel.transform(input: input)
+        
+        output.markerLocation
+            .subscribe(onNext: { locations in
+                locations.forEach { [weak self] aed in
+                    self?.setMapMarker(AED: aed)
+//                    self?.setClusterer(AED: aed)
+                }
+                self.clusterer?.addAll(self.keyTagMap)
+
+                self.clusterer?.mapView = self.mapView
+            }).disposed(by: disposeBag)
+        
+        output.aedInfo.subscribe(onNext: { [weak self] info in
+            self?.showMyViewControllerInACustomizedSheet(info: info)
+        }).disposed(by: disposeBag)
+    }
+    
     //MARK: - Function
-    private func setMapMarker() {
+    private func setClusterer(AED: AEDLocation) {
+        let builder = NMCBuilder<ItemKey>()
+
+        builder.minZoom = 4
+
+        guard let lat = Double(AED.location.latitude) else { return }
+        guard let lng = Double(AED.location.longitude) else { return }
+        
+        
+        self.clusterer = builder.build()
+        
+        let newItem = ItemKey(identifier: AED.id, position: NMGLatLng(lat: lat, lng: lng))
+        keyTagMap[newItem] = NSNull()
+        
+        clusterer?.mapView = mapView
+    }
+    
+    private func setMapMarker(AED: AEDLocation) {
+        
+        guard let lat = Double(AED.location.latitude) else { return }
+        guard let lng = Double(AED.location.longitude) else { return }
+        
         let marker = NMFMarker()
-        marker.position = NMGLatLng(lat: 37.3588564, lng: 127.1052092)
+        
+        marker.position = NMGLatLng(lat: lat, lng: lng)
         marker.width = CGFloat(NMF_MARKER_SIZE_AUTO)
         marker.height = CGFloat(NMF_MARKER_SIZE_AUTO)
         
-        let handler = { [weak self] (overlay: NMFOverlay) -> Bool in
-            self?.showMyViewControllerInACustomizedSheet()
-            
+        marker.rx.touchHandler.onNext { [weak self] NMFOverlay in
+            self?.viewModel.sender.accept(marker.position)
             return true
         }
-        
-        marker.touchHandler = handler
         
         marker.mapView = mapView
     }
     
     private func setMapOption() {
         
-        let circleOverlay = NMFCircleOverlay(NMGLatLng(lat: 37.3588564, lng: 127.1052092), radius: 500, fill: .mainColor.withAlphaComponent(0.1))
-        
-        circleOverlay.outlineColor = .mainColor
-        circleOverlay.outlineWidth = 3
-        circleOverlay.mapView = mapView
-        
         mapView.positionMode = .direction
     }
     
-    private func showMyViewControllerInACustomizedSheet() {
+    private func showMyViewControllerInACustomizedSheet(info: AEDInfo) {
         
         if let sheet = viewControllerToPresent.sheetPresentationController {
             
@@ -68,6 +112,7 @@ extension MapViewController {
             sheet.prefersGrabberVisible = true
         }
         
+        viewControllerToPresent.locationDetailInfoView.binding(info: info)
         viewControllerToPresent.locationDetailInfoView.removeSubviews()
         viewControllerToPresent.locationDetailInfoView.setUpCustomViews()
         
@@ -92,7 +137,7 @@ extension MapViewController: UISheetPresentationControllerDelegate{
             case .small:
                 viewControllerToPresent.locationDetailInfoView.removeSubviews()
                 viewControllerToPresent.locationDetailInfoView.setUpCustomViews()
-            
+                
             default:
                 break
             }

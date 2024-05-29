@@ -39,6 +39,7 @@ extension AEDWebViewController {
     
     //MARK: - Function
     private func setWebView() {
+        
         guard let myURL = URL(string: url) else { return }
         webView.load(URLRequest(url: myURL))
         

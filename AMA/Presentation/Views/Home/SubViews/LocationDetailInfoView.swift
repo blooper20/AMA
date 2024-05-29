@@ -28,6 +28,7 @@ final class LocationDetailInfoView: UIView {
         label.sizeToFit()
         label.text = "!!!!!"
         label.textColor = .label
+        label.numberOfLines = 0
         
         return label
     }()
@@ -108,14 +109,14 @@ extension LocationDetailInfoView {
         
         self.addSubview(aedPositionLabel)
         aedPositionLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(calculatingHeight(height: 20))
+            make.top.equalToSuperview().inset(calculatingHeight(height: 30))
             make.left.equalToSuperview().inset(calculatingWidth(width: 30))
         }
         
         self.addSubview(aedAddressLabel)
         aedAddressLabel.snp.makeConstraints { make in
             make.top.equalTo(aedPositionLabel.snp.bottom).offset(calculatingHeight(height: 15))
-            make.left.equalToSuperview().inset(calculatingWidth(width: 30))
+            make.horizontalEdges.equalToSuperview().inset(calculatingWidth(width: 30))
         }
         
         self.addSubview(directionButton)
@@ -158,13 +159,13 @@ extension LocationDetailInfoView {
         }
     }
     
-    func binding(info: Info) {
-        aedPositionLabel.text = info.place
-        aedAddressLabel.text = info.address
+    func binding(info: AEDInfo) {
+        aedPositionLabel.text = info.buildPlace
+        aedAddressLabel.text = info.buildAddress
         directionButton.setTitle("", for: .normal)
-        productNameLabel.text = info.modelName
-        manufacturerLabel.text = info.manufacturer
-        managerNameLabel.text = info.managerName
+        productNameLabel.text = info.model
+        manufacturerLabel.text = info.col
+        managerNameLabel.text = info.manager
         managerPhoneButton.setTitle(info.managerTel, for: .normal)
     }
 }

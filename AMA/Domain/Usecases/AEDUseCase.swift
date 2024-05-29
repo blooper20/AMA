@@ -22,33 +22,23 @@ final class AEDUseCase {
 
 extension AEDUseCase: AEDUseCaseProtocol {
     
-    var aedInfos: Observable<[Info]> {
-        get {
-            fetchAEDResponse()
-        }
-    }
-    
     //MARK: - AED Info
-    func fetchAEDResponse() -> Observable<[Info]> {
-        return aedNetwork.fetchData().map(\.data)
-    }
-    
-    func fetchAEDLocation(location: Location) -> Observable<[AEDLocation]> {
+    func fetchAEDLocation() -> Observable<[AEDLocation]> {
         
-        let location = aedInfos.map { infos in
+        let location = aedNetwork.fetchData().map { infos in
             infos.map { info in
-                AEDLocation(id: info.id, location: info.location)
+                AEDLocation(id: info.id, location: .init(latitude: info.latitude, longitude: info.longitude))
             }
         }
         
         return location
     }
     
-    func fetchAEDInfo(id: String) -> Observable<Info> {
+    func fetchAEDInfo(id: Int) -> Observable<AEDInfo> {
         
-        let info = aedInfos.map { infos in
+        let info = aedNetwork.fetchData().map { infos in
             infos.first(where: { $0.id == id })
-        }.flatMap { info -> Observable<Info> in
+        }.flatMap { info -> Observable<AEDInfo> in
             if let info = info {
                 return .just(info)
             }

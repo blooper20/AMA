@@ -8,27 +8,24 @@
 import Foundation
 
 //MARK: - AEDResponse
-struct AEDResponse: Decodable {
-    let data: [Info]
+struct AEDInfo : Decodable {
+    let id: Int
+    let latitude: String
+    let longitude: String
+    let buildPlace: String
+    let buildAddress: String
+    let manager: String
+    let managerTel: String
+    let model: String
+    let col: String
 }
 
 struct AEDLocation {
-    let id: String
+    let id: Int
     let location: Location
 }
 
-struct Location: Decodable {
-    let lat: String
-    let lng: String
-}
-
-struct Info : Decodable {
-    let id: String
-    let location: Location
-    let place: String
-    let address: String
-    let managerName: String
-    let managerTel: String
-    let modelName: String
-    let manufacturer: String
+struct Location {
+    let latitude: String
+    let longitude: String
 }
